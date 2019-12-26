@@ -1,0 +1,22 @@
+{
+    "project": "TGS_salt",
+    "task": {
+        "name": "TGS_segmentation",
+        "type": "seg",
+        "model": {
+            "name": "unet"
+        },
+        "data": {
+            "img_path": "D:\\dataset\\tgs-salt-identification-challenge\\train\\images",
+            "mask_path": "D:\\dataset\\tgs-salt-identification-challenge\\train\\masks",
+            "dir_checkpoint": "checkpoints/",
+            "val_percent":0.1,
+            "img_scale":0.5
+        },
+        "superparams": {
+            "epochs": 5,
+            "batch_size": 64,
+            "lr": 0.1
+        }
+    }
+}
